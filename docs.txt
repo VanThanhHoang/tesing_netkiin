@@ -1,5 +1,0 @@
-test case 
-Luôn đóng app rồi mở app khi chạy test case
-1. Tìm kiếm :
-    + Quy trình : Mở màn chính -> Mở màn tìm kiếm -> Điền text -> Xoá text -> Điền text -> Tìm kiếm
-2

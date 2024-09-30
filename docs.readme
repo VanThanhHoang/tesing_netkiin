@@ -1,0 +1,26 @@
+# Hướng dẫn Kiểm tra Tính năng Tìm kiếm
+
+## Mở đầu
+Luôn đóng ứng dụng và mở lại ứng dụng trước khi chạy các test case dưới đây.
+
+## Test Case 1: Tìm kiếm
+
+### I. Tìm kiếm bằng nhập text
+**Quy trình:**
+1. Mở màn chính.
+2. Mở màn tìm kiếm.
+3. Điền text vào ô tìm kiếm.
+4. Xóa text trong ô tìm kiếm.
+5. Điền text mới vào ô tìm kiếm.
+6. Nhấn nút Tìm kiếm.
+7. Trở lại màn chính.
+
+### II. Tìm kiếm bằng lịch sử tìm kiếm
+**Quy trình:**
+1. Mở màn chính.
+2. Mở màn tìm kiếm.
+3. Bấm vào item đầu tiên trong lịch sử tìm kiếm.
+4. Trở lại màn chính.
+
+## Kết thúc
+Đảm bảo thực hiện đúng quy trình để đảm bảo tính năng hoạt động chính xác.
