@@ -17,9 +17,7 @@ def main_menu():
         for key, (_, desc) in options.items():
             print(f"{key}. {desc}")
         print("0. Thoát")
-        
         choice = input("Vui lòng chọn một tùy chọn: ")
-        
         if choice == '0':
             print("Đang thoát chương trình...")
             break

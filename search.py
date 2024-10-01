@@ -1,6 +1,8 @@
 import subprocess
 import time
-from common import clickByPosition,fillText,reOpenApp
+from uiautomator import Device
+from common import clickByPosition,fillText,reOpenApp,clickByTextView
+
 def searchTesting():
     try:
         reOpenApp()
@@ -49,6 +51,8 @@ def deleteSearchHistory():
     print("Xoá 1 lịch sử tìm kiếm đầu tiên...")
     clickByPosition(990, 470)
     time.sleep(1)
-    print("Trở lại màn chính")
-    #Back màn chính
+    clickByTextView('Xoá tất cả')
+    print("Xoá tất cả lịch sử tìm kiếm.")
+    time.sleep(2)   
+    clickByTextView('XÓA')
     clickByPosition(81, 208) 

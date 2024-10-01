@@ -1,5 +1,7 @@
 import subprocess
 import time
+from uiautomator import Device
+device = Device('BDB00044546')  
 def reOpenApp():
          # Đóng ứng dụng trước
         print("Đóng ứng dụng...")
@@ -68,3 +70,12 @@ def swipe(x, y, duration, direction, repetitions, sleep_time):
             print(f"Thao tác vuốt phải lần {i + 1}: từ ({x_end}, {y}) đến ({x}, {y})")
             subprocess.run(["adb", "shell", "input", "swipe", str(x), str(y), str(x_end), str(y), str(duration)])
         time.sleep(sleep_time)   
+        
+def clickByTextView(text):
+    element = device(text=text)
+    if element.exists:
+        element.click()  # Bấm vào phần tử nếu tìm thấy
+        time.sleep(1)   
+        print("Clicked on ${text} button.")
+    else:
+        print("Element ${text} b not found.")
